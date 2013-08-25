@@ -1,0 +1,80 @@
+*
+  padding: 0
+  margin: 0
+
+html body
+  font-family: Helvetica, Verdana, Arial, sans-serif
+  color: $fcolor
+  font-size: 1em
+  margin: 0
+  padding: 0
+
+ul,
+li
+  list-style: none
+  font-size: 0.95em
+
+.clearfix
+  overflow: hidden
+
+.clearfix::after
+  content: " "
+  float: none
+  clear: both
+
+ul.nav
+  margin: 0
+  padding: 0
+  font-size: 0.95em
+
+#wrapper
+  background-color: #FFFFFF
+
+#headerSlots
+  background-color: #FFFFFF
+  color: #666666
+  padding: 10px
+
+/** Hide the store link for now **/
+#header-7
+  display: none
+
+#header-1 ul li
+  float: left
+  margin-right: 5px
+
+#header-1 ul li a
+  text-decoration: none
+  padding: 5px 10px
+
+#header-1 ul li
+  border-right: 1px solid #EFEFEF
+
+#header-1 ul li:last-child
+  border-right: none
+
+#header-1 ul li a:hover
+  background-color: #EFEFEF
+
+/** End Header here **/
+/** Footer content **/
+#footer
+  overflow: hidden
+  padding: 10px
+
+#footer-9,
+#footer-10
+  float: right
+  font-size: 0.65em
+
+#footer-10 img
+  filter: grayscale(100%)
+  -webkit-filter: grayscale(100%)
+  width: 56px
+  height: 20px
+
+#footer-10 img:hover
+  filter: grayscale(0)
+  -webkit-filter: grayscale(0)
+
+/** Main content **/
