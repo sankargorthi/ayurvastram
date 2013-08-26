@@ -1,5 +1,33 @@
 @import _base
 
-#header-2
-  .linkList
-    +clearfix
+html
+  body
+
+    #header-2
+      .linkList
+        +clearfix
+
+    #footer
+      overflow: hidden
+
+      .footerSocialLinks
+        ul
+          li
+            float: left
+
+      #footer-9,
+      #footer-10
+        position: absolute
+        bottom: 0
+        right: 0
+        font-size: 0.65em
+
+      #footer-10 img
+        filter: grayscale(100%)
+        -webkit-filter: grayscale(100%)
+        width: 56px
+        height: 20px
+
+      #footer-10 img:hover
+        filter: grayscale(0)
+        -webkit-filter: grayscale(0)

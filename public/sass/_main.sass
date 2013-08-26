@@ -11,52 +11,27 @@ html body
   margin: 0
   padding: 0
 
-ul,
-li
-  list-style: none
-  font-size: 0.95em
+  ul,
+  li
+    list-style: none
+    font-size: 0.95em
 
-.clearfix
-  overflow: hidden
+  ul.nav
+    margin: 0
+    padding: 0
+    font-size: 0.95em
 
-.clearfix::after
-  content: " "
-  float: none
-  clear: both
+  #wrapper
+    background-color: $white
+    box-shadow: 0 0 10px $black
+    margin-bottom: 10px
+    position: relative
 
-ul.nav
-  margin: 0
-  padding: 0
-  font-size: 0.95em
-
-#wrapper
-  background-color: $white
-  box-shadow: 0 0 10px $black
-
-#headerSlots
-  background-color: $white
-  color: $fcolor
+  #headerSlots
+    background-color: $white
+    color: $fcolor
 
 
-/** End Header here **/
-/** Footer content **/
-#footer
-  overflow: hidden
-  padding: 10px
+  /** End Header here **/
 
-#footer-9,
-#footer-10
-  float: right
-  font-size: 0.65em
-
-#footer-10 img
-  filter: grayscale(100%)
-  -webkit-filter: grayscale(100%)
-  width: 56px
-  height: 20px
-
-#footer-10 img:hover
-  filter: grayscale(0)
-  -webkit-filter: grayscale(0)
-
-/** Main content **/
+  /** Main content **/
