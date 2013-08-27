@@ -1,11 +1,59 @@
 @import _base
 
+// Need this to override a style in personalization.css
+html
+  body
+    div#wrapper
+      div#innerWrapper
+        div#headerSlots
+          div#header-1
+            div.imageWidget
+              margin-bottom: 8px
+
 html
   body
 
+    #header-1
+      .imageWidget
+        margin: 8px 0 8px 20px
+
+    #globalNav
+      &.navigationLinks
+        border-left: none
+        border-right: none
+
     #header-2
+      +clearfix
       .linkList
         +clearfix
+
+    #header-6
+      .signInMenu
+        position: absolute
+        top: 0
+        right: 5px
+        font-size: 0.75em
+
+    #header-7
+      .com-amazon-webstore-MiniCart-3
+        #miniCart
+          width: auto
+          position: absolute
+          top: 22px
+          right: 40px
+          font-size: 0.75em
+          padding: 3px
+
+          .staticMiniCart
+            .cartInformation
+              padding: 0
+            .viewCart
+              margin-left: 8px
+              line-height: 24px
+              vertical-align: middle
+              .miniCartControls
+                padding: 0
+                margin-top: 3px
 
     #footer
       overflow: hidden
