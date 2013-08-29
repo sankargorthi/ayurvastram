@@ -57,11 +57,16 @@ html
 
     #footer
       overflow: hidden
+      padding: 20px 0 10px
 
       .footerSocialLinks
         ul
+          margin: 0 0 0 20px
+          padding: 0
+          border-right: 1px solid lighten($black, 10%)
           li
             float: left
+
             a:link,
             a:visited,
             a:hover,
@@ -81,11 +86,24 @@ html
               a
                 background: url('/media/Site Files/Merchandising Files/twitter20x20.png') no-repeat center center
 
-      #footer-9,
+      #footer-8
+        .dynamicMenu
+          float: left
+          margin-left: 20px
+        ul
+          li
+            float: left
+            margin-right: 10px
+            font-size: 0.75em
+
+            a
+              text-decoration: none
+              color: lighten($black, 10%)
+
       #footer-10
         position: absolute
-        bottom: 0
-        right: 0
+        bottom: 10px
+        right: 10px
         font-size: 0.65em
 
       #footer-10 img
@@ -94,6 +112,6 @@ html
         width: 56px
         height: 20px
 
-      #footer-10 img:hover
-        filter: grayscale(0)
-        -webkit-filter: grayscale(0)
+        &:hover
+          filter: grayscale(0)
+          -webkit-filter: grayscale(0)
