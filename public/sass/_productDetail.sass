@@ -1,0 +1,49 @@
+html
+	body.detail
+		#wrapper
+
+			#mainContentWrapper[itemType="http://data-vocabulary.org/Product"]
+				#columns
+					#leftColumn
+						display: none
+					#center-right-wrapper
+						padding: 0
+						border-left: none
+
+						#productTitle
+							font-size: 1.0em
+							margin-bottom: 0
+						.com-amazon-webstore-ProductItemNumber-2
+							display: none
+						.com-amazon-webstore-ProductPricing-2
+							.productDetailPrice
+								dl
+									margin-bottom: 0
+
+						#colorSwatches
+							.chooseSwatch
+								strong.label,
+								p.colorMsgLabel
+									display: none
+
+								.colorSwatches
+									display: inline-block
+									margin-left: 5px
+									vertical-align: middle
+									li
+										a
+											font-size: 0.35em
+											width: 30px
+											height: 30px
+								&::before
+									content: 'Color:'
+									font-weight: bold
+									font-size: 0.85em
+									display: inline-block
+									line-height: 40px
+
+						#rightColumn
+							margin-left: 330px
+
+			#pan-view-target
+				border: 1px solid hsl(0, 0%, 85%)
